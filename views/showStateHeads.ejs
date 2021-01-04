@@ -1,0 +1,20 @@
+<h1>
+    Heads Of State
+</h1>
+
+<button data-ref="" class="btn btn-primary">Add Head of State</button>
+
+<table border="1">
+    <tr>
+    <th>Country Code</th>
+    <th>Head of State</th>
+    </tr>
+    <% StateHeads.forEach((headOfState) => { %>
+    <tr>
+    <td><%= headOfState._id %></td>
+    <td><%= headOfState.headOfState %></td>
+    </tr>
+    <% }) %>
+</table>
+
+<a href="/">Home</a>
